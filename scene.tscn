@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3ug6edv6lp8l"]
+
+[ext_resource type="ArrayMesh" uid="uid://c6ktaetnswyrx" path="res://Untitled.obj" id="1_ulcgi"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_drvgu"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ulcgi"]
+
+[node name="findimg the gorls" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0782865, 0.0233558, -0.244707)
+mesh = SubResource("BoxMesh_drvgu")
+
+[node name="Camera3D" type="Camera3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 0.946108, 0.323851, 0, -0.323851, 0.946108, 0.0782865, 1.6749, 3.89027)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.30287, 2.99393)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.56329, 0, 0)
+mesh = SubResource("BoxMesh_ulcgi")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.56329, 0, -9.86829)
+mesh = SubResource("BoxMesh_ulcgi")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.56329, 0, -4.77209)
+mesh = SubResource("BoxMesh_ulcgi")
+
+[node name="Untitled" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.61282, 4.76837e-07, 1.45309)
+mesh = ExtResource("1_ulcgi")
